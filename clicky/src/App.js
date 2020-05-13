@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import Dogs from "./components/Dogs";
+import Score from "./components/Score";
+import dogPictures from "./dogs.json";
 
-function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+class App extends Component {
+  state = {
+    dogPictures,
+    dogClickID:[],
+    score: 0,
+    goal: 10,
+    status: ""
+  };
 }
 
 export default App;
