@@ -25,7 +25,7 @@ class App extends Component {
       dogClickID.push(id)
 
       if(dogClickID.length === 10){
-        this.setState({score:10, status: "Winner! Play again!", dogClickID: []});
+        this.setState({score: 10, status: "Winner! Play again!", dogClickID: []});
         console.log('Win');
         return;
     }
@@ -47,6 +47,7 @@ render() {
         <p className="App-intro">
           Don't click the same image twice, or else!
         </p>
+        <p>Scroll down to begin!</p>
       </header>
       <Score total={this.state.score}
              goal={10}
